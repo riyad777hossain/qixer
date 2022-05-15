@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QIXER - Service Based Business HTML Template</title>
+
+    <!-- favicon -->
+    <link rel=icon href="favicons.ico" sizes="16x16" type="icon/ico">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- slick carousel  -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- LineAwesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="loader_bars">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+    <!-- Dashboard area Starts -->
+    <div class="body-overlay"></div>
+    <div class="dashboard-area dashboard-padding">
+        <div class="container-fluid">
+            <div class="dashboard-contents-wrapper">
+                <div class="dashboard-icon">
+                    <div class="sidebar-icon">
+                        <i class="las la-bars"></i>
+                    </div>
+                </div>
+                <div class="dashboard-left-content">
+                    <div class="dashboard-close-main">
+                        <div class="close-bars"> <i class="las la-times"></i> </div>
+                        <div class="dashboard-top padding-top-40">
+                            <div class="thumb">
+                                <img src="assets/img/dashboard/authors.jpg" alt="">
+                            </div>
+                            <div class="author-content">
+                                <h4 class="title"> Alex Jenin </h4>
+                                <span class="small-title"> Owner CleanMart </span>
+                            </div>
+                        </div>
+                        <div class="dashboard-bottom margin-top-35 margin-bottom-50">
+                            <ul class="dashboard-list ">
+                                <li class="list">
+                                    <a href="dashboard.html"> <i class="las la-th"></i> Dashboard </a>
+                                </li>
+                                <li class="list">
+                                    <a href="dashboard_services.html"> <i class="las la-cogs"></i> Services </a>
+                                </li>
+                                <li class="list">
+                                    <a href="dashboard_orders_pending.html"> <i class="las la-tasks"></i> Order Pending </a>
+                                </li>
+                                <li class="list active">
+                                    <a href="dashboard_order.html"> <i class="las la-tasks"></i> Order Status </a>
+                                </li>
+                                <li class="list">
+                                    <a href="dashboard_payout.html"> <i class="las la-dollar-sign"></i> Payout History </a>
+                                </li>
+                                <li class="list">
+                                    <a href="dashboard_profile.html"> <i class="las la-user"></i> Profile </a>
+                                </li>
+                                <li class="list">
+                                    <a href="dashboard_settings.html"> <i class="las la-cog"></i> Settings </a>
+                                </li>
+                                <li class="list">
+                                    <a href="dashboard_review.html"> <i class="lar la-star"></i> Review </a>
+                                </li>
+                                <li class="list">
+                                    <a href="javascript:void(0)"> <i class="las la-sign-out-alt"></i> Log Out </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dashboard-logo padding-top-100">
+                            <a href="index.html" class="logo"> <img src="assets/img/dashboard/dashboard-logo.png" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-right">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="dashboard-settings margin-top-40">
+                                <h2 class="dashboards-title"> Order Status </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 margin-top-40">
+                            <div class="dashboard-status-list">
+                                <ul class="tabs status-order-list margin-bottom-10">
+                                    <li class="active" data-tab="tab-active"> Active <span class="numbers"> 10 </span> </li>
+                                    <li data-tab="tab-delevered"> Delevered <span class="numbers"> 75 </span> </li>
+                                    <li data-tab="tab-completed"> Completed <span class="numbers"> 90 </span> </li>
+                                    <li data-tab="tab-cancelled"> Cancelled <span class="numbers"> 75 </span> </li>
+                                    <li data-tab="tab-all"> All <span class="numbers"> 99 </span> </li>
+                                </ul>
+                            </div>
+                            <div id="tab-active" class="tab-content-item active">
+                                <div class="table-responsive table-responsive--md table-responsive-lg">
+                                    <table class="custom--table">
+                                        <thead>
+                                            <tr>
+                                                <th> Order ID </th>
+                                                <th> Order Summary </th>
+                                                <th> Customer Name </th>
+                                                <th> Service Time </th>
+                                                <th> Order Pricing </th>
+                                                <th> Order Status </th>
+                                                <th> Action </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Order ID"> asd3420 </td>
+                                                <td data-label="Order Summary"> Painting & Renovation </td>
+                                                <td data-label="Customer Name"> Jhon Doe </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 08.00PM </td>
+                                                <td data-label="Order Pricing"> $280.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> r3r0912 </td>
+                                                <td data-label="Order Summary"> Home & Other Cleaning </td>
+                                                <td data-label="Customer Name"> Jhon Cena </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 09.00PM </td>
+                                                <td data-label="Order Pricing"> $220.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> er243ew </td>
+                                                <td data-label="Order Summary"> House Move & Shifting </td>
+                                                <td data-label="Customer Name"> Abraham </td>
+                                                <td data-label="Service Time"> 24 Jan, 2022- 07.00PM </td>
+                                                <td data-label="Order Pricing"> $250.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> 34et34 </td>
+                                                <td data-label="Order Summary"> Hair Cut & Hair Color</td>
+                                                <td data-label="Customer Name"> Biden </td>
+                                                <td data-label="Service Time"> 25 Jan, 2021- 08.20PM </td>
+                                                <td data-label="Order Pricing"> $270.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> tt0r012 </td>
+                                                <td data-label="Order Summary"> Refrigerator Repair</td>
+                                                <td data-label="Customer Name"> Hilary </td>
+                                                <td data-label="Service Time"> 26 Jan, 2021- 01.50PM </td>
+                                                <td data-label="Order Pricing"> $230.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> 0er023 </td>
+                                                <td data-label="Order Summary"> Machine Repair </td>
+                                                <td data-label="Customer Name"> Roman </td>
+                                                <td data-label="Service Time"> 27 Jan, 2021- 02.00PM </td>
+                                                <td data-label="Order Pricing"> $210.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> fds0123 </td>
+                                                <td data-label="Order Summary"> Kitchen Hood Repair</td>
+                                                <td data-label="Customer Name"> Jhon Doe </td>
+                                                <td data-label="Service Time"> 28 Jan, 2021- 04.00PM </td>
+                                                <td data-label="Order Pricing"> $280.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> erq5434 </td>
+                                                <td data-label="Order Summary"> IPS Repair</td>
+                                                <td data-label="Customer Name"> Arafat </td>
+                                                <td data-label="Service Time"> 29 Jan, 2021- 05.00PM </td>
+                                                <td data-label="Order Pricing"> $270.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> ew3451 </td>
+                                                <td data-label="Order Summary"> Water Purifier </td>
+                                                <td data-label="Customer Name"> Lesner </td>
+                                                <td data-label="Service Time"> 30 Jan, 2021- 04.00PM </td>
+                                                <td data-label="Order Pricing"> $250.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> ew3427 </td>
+                                                <td data-label="Order Summary"> House Clean</td>
+                                                <td data-label="Customer Name"> Rajia </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 07.40PM </td>
+                                                <td data-label="Order Pricing"> $240.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="blog-pagination margin-top-55">
+                                    <ul class="pagination-list style-02">
+                                        <li><a href="javascript:void(0)"> 1 </a></li>
+                                        <li><a href="javascript:void(0)"> 2 </a></li>
+                                        <li><a href="javascript:void(0)"> 3 </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="tab-delevered" class="tab-content-item">
+                                <div class="table-responsive table-responsive--md table-responsive-lg">
+                                    <table class="custom--table">
+                                        <thead>
+                                            <tr>
+                                                <th> Order ID </th>
+                                                <th> Order Summary </th>
+                                                <th> Customer Name </th>
+                                                <th> Service Time </th>
+                                                <th> Order Pricing </th>
+                                                <th> Order Status </th>
+                                                <th> Action </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Order ID"> asd3420 </td>
+                                                <td data-label="Order Summary"> Painting & Renovation </td>
+                                                <td data-label="Customer Name"> Jhon Doe </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 08.00PM </td>
+                                                <td data-label="Order Pricing"> $280.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> r3r0912 </td>
+                                                <td data-label="Order Summary"> Home & Other Cleaning </td>
+                                                <td data-label="Customer Name"> Jhon Cena </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 09.00PM </td>
+                                                <td data-label="Order Pricing"> $220.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> er243ew </td>
+                                                <td data-label="Order Summary"> House Move & Shifting </td>
+                                                <td data-label="Customer Name"> Abraham </td>
+                                                <td data-label="Service Time"> 24 Jan, 2022- 07.00PM </td>
+                                                <td data-label="Order Pricing"> $250.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> 34et34 </td>
+                                                <td data-label="Order Summary"> Hair Cut & Hair Color</td>
+                                                <td data-label="Customer Name"> Biden </td>
+                                                <td data-label="Service Time"> 25 Jan, 2021- 08.20PM </td>
+                                                <td data-label="Order Pricing"> $270.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> tt0r012 </td>
+                                                <td data-label="Order Summary"> Refrigerator Repair</td>
+                                                <td data-label="Customer Name"> Hilary </td>
+                                                <td data-label="Service Time"> 26 Jan, 2021- 01.50PM </td>
+                                                <td data-label="Order Pricing"> $230.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> 0er023 </td>
+                                                <td data-label="Order Summary"> Machine Repair </td>
+                                                <td data-label="Customer Name"> Roman </td>
+                                                <td data-label="Service Time"> 27 Jan, 2021- 02.00PM </td>
+                                                <td data-label="Order Pricing"> $210.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> fds0123 </td>
+                                                <td data-label="Order Summary"> Kitchen Hood Repair</td>
+                                                <td data-label="Customer Name"> Jhon Doe </td>
+                                                <td data-label="Service Time"> 28 Jan, 2021- 04.00PM </td>
+                                                <td data-label="Order Pricing"> $280.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> erq5434 </td>
+                                                <td data-label="Order Summary"> IPS Repair</td>
+                                                <td data-label="Customer Name"> Arafat </td>
+                                                <td data-label="Service Time"> 29 Jan, 2021- 05.00PM </td>
+                                                <td data-label="Order Pricing"> $270.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> ew3451 </td>
+                                                <td data-label="Order Summary"> Water Purifier </td>
+                                                <td data-label="Customer Name"> Lesner </td>
+                                                <td data-label="Service Time"> 30 Jan, 2021- 04.00PM </td>
+                                                <td data-label="Order Pricing"> $250.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> ew3427 </td>
+                                                <td data-label="Order Summary"> House Clean</td>
+                                                <td data-label="Customer Name"> Rajia </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 07.40PM </td>
+                                                <td data-label="Order Pricing"> $240.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="blog-pagination margin-top-55">
+                                    <ul class="pagination-list style-02">
+                                        <li><a href="javascript:void(0)"> 1 </a></li>
+                                        <li><a href="javascript:void(0)"> 2 </a></li>
+                                        <li><a href="javascript:void(0)"> 3 </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="tab-completed" class="tab-content-item">
+                                <div class="table-responsive table-responsive--md table-responsive-lg">
+                                    <table class="custom--table">
+                                        <thead>
+                                            <tr>
+                                                <th> Order ID </th>
+                                                <th> Order Summary </th>
+                                                <th> Customer Name </th>
+                                                <th> Service Time </th>
+                                                <th> Order Pricing </th>
+                                                <th> Order Status </th>
+                                                <th> Action </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Order ID"> asd3420 </td>
+                                                <td data-label="Order Summary"> Painting & Renovation </td>
+                                                <td data-label="Customer Name"> Jhon Doe </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 08.00PM </td>
+                                                <td data-label="Order Pricing"> $280.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> r3r0912 </td>
+                                                <td data-label="Order Summary"> Home & Other Cleaning </td>
+                                                <td data-label="Customer Name"> Jhon Cena </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 09.00PM </td>
+                                                <td data-label="Order Pricing"> $220.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> er243ew </td>
+                                                <td data-label="Order Summary"> House Move & Shifting </td>
+                                                <td data-label="Customer Name"> Abraham </td>
+                                                <td data-label="Service Time"> 24 Jan, 2022- 07.00PM </td>
+                                                <td data-label="Order Pricing"> $250.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> 34et34 </td>
+                                                <td data-label="Order Summary"> Hair Cut & Hair Color</td>
+                                                <td data-label="Customer Name"> Biden </td>
+                                                <td data-label="Service Time"> 25 Jan, 2021- 08.20PM </td>
+                                                <td data-label="Order Pricing"> $270.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> tt0r012 </td>
+                                                <td data-label="Order Summary"> Refrigerator Repair</td>
+                                                <td data-label="Customer Name"> Hilary </td>
+                                                <td data-label="Service Time"> 26 Jan, 2021- 01.50PM </td>
+                                                <td data-label="Order Pricing"> $230.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> 0er023 </td>
+                                                <td data-label="Order Summary"> Machine Repair </td>
+                                                <td data-label="Customer Name"> Roman </td>
+                                                <td data-label="Service Time"> 27 Jan, 2021- 02.00PM </td>
+                                                <td data-label="Order Pricing"> $210.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> fds0123 </td>
+                                                <td data-label="Order Summary"> Kitchen Hood Repair</td>
+                                                <td data-label="Customer Name"> Jhon Doe </td>
+                                                <td data-label="Service Time"> 28 Jan, 2021- 04.00PM </td>
+                                                <td data-label="Order Pricing"> $280.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> erq5434 </td>
+                                                <td data-label="Order Summary"> IPS Repair</td>
+                                                <td data-label="Customer Name"> Arafat </td>
+                                                <td data-label="Service Time"> 29 Jan, 2021- 05.00PM </td>
+                                                <td data-label="Order Pricing"> $270.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> ew3451 </td>
+                                                <td data-label="Order Summary"> Water Purifier </td>
+                                                <td data-label="Customer Name"> Lesner </td>
+                                                <td data-label="Service Time"> 30 Jan, 2021- 04.00PM </td>
+                                                <td data-label="Order Pricing"> $250.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> ew3427 </td>
+                                                <td data-label="Order Summary"> House Clean</td>
+                                                <td data-label="Customer Name"> Rajia </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 07.40PM </td>
+                                                <td data-label="Order Pricing"> $240.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="blog-pagination margin-top-55">
+                                    <ul class="pagination-list style-02">
+                                        <li><a href="javascript:void(0)"> 1 </a></li>
+                                        <li><a href="javascript:void(0)"> 2 </a></li>
+                                        <li><a href="javascript:void(0)"> 3 </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="tab-cancelled" class="tab-content-item">
+                                <div class="table-responsive table-responsive--md table-responsive-lg">
+                                    <table class="custom--table">
+                                        <thead>
+                                            <tr>
+                                                <th> Order ID </th>
+                                                <th> Order Summary </th>
+                                                <th> Customer Name </th>
+                                                <th> Service Time </th>
+                                                <th> Order Pricing </th>
+                                                <th> Order Status </th>
+                                                <th> Action </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Order ID"> asd3420 </td>
+                                                <td data-label="Order Summary"> Painting & Renovation </td>
+                                                <td data-label="Customer Name"> Jhon Doe </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 08.00PM </td>
+                                                <td data-label="Order Pricing"> $280.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> r3r0912 </td>
+                                                <td data-label="Order Summary"> Home & Other Cleaning </td>
+                                                <td data-label="Customer Name"> Jhon Cena </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 09.00PM </td>
+                                                <td data-label="Order Pricing"> $220.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> er243ew </td>
+                                                <td data-label="Order Summary"> House Move & Shifting </td>
+                                                <td data-label="Customer Name"> Abraham </td>
+                                                <td data-label="Service Time"> 24 Jan, 2022- 07.00PM </td>
+                                                <td data-label="Order Pricing"> $250.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> 34et34 </td>
+                                                <td data-label="Order Summary"> Hair Cut & Hair Color</td>
+                                                <td data-label="Customer Name"> Biden </td>
+                                                <td data-label="Service Time"> 25 Jan, 2021- 08.20PM </td>
+                                                <td data-label="Order Pricing"> $270.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> tt0r012 </td>
+                                                <td data-label="Order Summary"> Refrigerator Repair</td>
+                                                <td data-label="Customer Name"> Hilary </td>
+                                                <td data-label="Service Time"> 26 Jan, 2021- 01.50PM </td>
+                                                <td data-label="Order Pricing"> $230.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> 0er023 </td>
+                                                <td data-label="Order Summary"> Machine Repair </td>
+                                                <td data-label="Customer Name"> Roman </td>
+                                                <td data-label="Service Time"> 27 Jan, 2021- 02.00PM </td>
+                                                <td data-label="Order Pricing"> $210.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> fds0123 </td>
+                                                <td data-label="Order Summary"> Kitchen Hood Repair</td>
+                                                <td data-label="Customer Name"> Jhon Doe </td>
+                                                <td data-label="Service Time"> 28 Jan, 2021- 04.00PM </td>
+                                                <td data-label="Order Pricing"> $280.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> erq5434 </td>
+                                                <td data-label="Order Summary"> IPS Repair</td>
+                                                <td data-label="Customer Name"> Arafat </td>
+                                                <td data-label="Service Time"> 29 Jan, 2021- 05.00PM </td>
+                                                <td data-label="Order Pricing"> $270.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> ew3451 </td>
+                                                <td data-label="Order Summary"> Water Purifier </td>
+                                                <td data-label="Customer Name"> Lesner </td>
+                                                <td data-label="Service Time"> 30 Jan, 2021- 04.00PM </td>
+                                                <td data-label="Order Pricing"> $250.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> ew3427 </td>
+                                                <td data-label="Order Summary"> House Clean</td>
+                                                <td data-label="Customer Name"> Rajia </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 07.40PM </td>
+                                                <td data-label="Order Pricing"> $240.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="blog-pagination margin-top-55">
+                                    <ul class="pagination-list style-02">
+                                        <li><a href="javascript:void(0)"> 1 </a></li>
+                                        <li><a href="javascript:void(0)"> 2 </a></li>
+                                        <li><a href="javascript:void(0)"> 3 </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="tab-all" class="tab-content-item">
+                                <div class="table-responsive table-responsive--md table-responsive-lg">
+                                    <table class="custom--table">
+                                        <thead>
+                                            <tr>
+                                                <th> Order ID </th>
+                                                <th> Order Summary </th>
+                                                <th> Customer Name </th>
+                                                <th> Service Time </th>
+                                                <th> Order Pricing </th>
+                                                <th> Order Status </th>
+                                                <th> Action </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Order ID"> asd3420 </td>
+                                                <td data-label="Order Summary"> Painting & Renovation </td>
+                                                <td data-label="Customer Name"> Jhon Doe </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 08.00PM </td>
+                                                <td data-label="Order Pricing"> $280.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> r3r0912 </td>
+                                                <td data-label="Order Summary"> Home & Other Cleaning </td>
+                                                <td data-label="Customer Name"> Jhon Cena </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 09.00PM </td>
+                                                <td data-label="Order Pricing"> $220.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> er243ew </td>
+                                                <td data-label="Order Summary"> House Move & Shifting </td>
+                                                <td data-label="Customer Name"> Abraham </td>
+                                                <td data-label="Service Time"> 24 Jan, 2022- 07.00PM </td>
+                                                <td data-label="Order Pricing"> $250.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> 34et34 </td>
+                                                <td data-label="Order Summary"> Hair Cut & Hair Color</td>
+                                                <td data-label="Customer Name"> Biden </td>
+                                                <td data-label="Service Time"> 25 Jan, 2021- 08.20PM </td>
+                                                <td data-label="Order Pricing"> $270.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> tt0r012 </td>
+                                                <td data-label="Order Summary"> Refrigerator Repair</td>
+                                                <td data-label="Customer Name"> Hilary </td>
+                                                <td data-label="Service Time"> 26 Jan, 2021- 01.50PM </td>
+                                                <td data-label="Order Pricing"> $230.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> 0er023 </td>
+                                                <td data-label="Order Summary"> Machine Repair </td>
+                                                <td data-label="Customer Name"> Roman </td>
+                                                <td data-label="Service Time"> 27 Jan, 2021- 02.00PM </td>
+                                                <td data-label="Order Pricing"> $210.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> fds0123 </td>
+                                                <td data-label="Order Summary"> Kitchen Hood Repair</td>
+                                                <td data-label="Customer Name"> Jhon Doe </td>
+                                                <td data-label="Service Time"> 28 Jan, 2021- 04.00PM </td>
+                                                <td data-label="Order Pricing"> $280.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> erq5434 </td>
+                                                <td data-label="Order Summary"> IPS Repair</td>
+                                                <td data-label="Customer Name"> Arafat </td>
+                                                <td data-label="Service Time"> 29 Jan, 2021- 05.00PM </td>
+                                                <td data-label="Order Pricing"> $270.00 </td>
+                                                <td class="pending" data-label="Order Status"> Pending </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> ew3451 </td>
+                                                <td data-label="Order Summary"> Water Purifier </td>
+                                                <td data-label="Customer Name"> Lesner </td>
+                                                <td data-label="Service Time"> 30 Jan, 2021- 04.00PM </td>
+                                                <td data-label="Order Pricing"> $250.00 </td>
+                                                <td class="canceled" data-label="Order Status"> Canceled </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Order ID"> ew3427 </td>
+                                                <td data-label="Order Summary"> House Clean</td>
+                                                <td data-label="Customer Name"> Rajia </td>
+                                                <td data-label="Service Time"> 21 Jan, 2021- 07.40PM </td>
+                                                <td data-label="Order Pricing"> $240.00 </td>
+                                                <td class="completed" data-label="Order Status"> Completed </td>
+                                                <td data-label="Action">
+                                                    <a href="javascript:void(0)" class="icon eye-icon"><i class="las la-eye"></i></a>
+                                                    <a href="javascript:void(0)" class="icon print-icon"> <i class="las la-print"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="blog-pagination margin-top-55">
+                                    <ul class="pagination-list style-02">
+                                        <li><a href="javascript:void(0)"> 1 </a></li>
+                                        <li><a href="javascript:void(0)"> 2 </a></li>
+                                        <li><a href="javascript:void(0)"> 3 </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Dashboard area end -->
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="las la-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- jquery Migrate -->
+    <script src="assets/js/jquery-migrate.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- wow -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.js"></script>
+    <!-- Nice Select -->
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
